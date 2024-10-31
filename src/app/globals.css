@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: sans;
+  src: url("../assets/fonts/IRANSans.ttf");
+}
+.header {
+  background: #303545f1;
+}
+
+/* slider */
+.carousel-indicators [data-bs-target] {
+  background-color: white;
+  width: 200px;
+  height: 5px;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important;
+}
+
+/* star feedback */
+.css-hmd0fc-MuiRating-root {
+  font-size: 14px !important;
+}
