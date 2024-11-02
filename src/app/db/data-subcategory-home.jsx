@@ -7,8 +7,7 @@ import ContentTabCategory from '../components/organisms/content-tab-category';
 import { useSelector } from 'react-redux';
 
 function DataSubCategoryHome() {
-    const categoryId = useSelector((state) => state.category.categoryId);
-    console.log(categoryId)
+    const categoryId = useSelector((state) => state.category.categoryId || 1);
 
     const [dataCategory, setDataCategory] = useState();
 
@@ -16,7 +15,6 @@ function DataSubCategoryHome() {
         queryKey: ['dataSubCategoryHome', categoryId],
         queryFn: async () => {
             const response = await interceptor.get(`courses/?category=${categoryId}`);
-            console.log(response.data)
             return response.data;
         }
     });

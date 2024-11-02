@@ -19,7 +19,7 @@ module.exports = {
         // bgmain: "#141414",
         bgmain: "#303545",
         bggray: "#A4A4A4",
-        colortitle: "#666666",
+        colortitle: "#b3b3b3",
         bgcategory: "#00b4c833",
         colorbordercategory: "#00b4c880",
         bgslowblack: "#1C1C1C",
