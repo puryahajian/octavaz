@@ -22,7 +22,7 @@ function StarFeedback() {
     const value = 3.5;
 
     return (
-        <Box sx={{ width: 200, display: 'flex', alignItems: 'center', direction: 'ltr' }}>
+        <Box sx={{ width: 'max-content', display: 'flex', alignItems: 'center', direction: 'ltr' }}>
             <Rating
                 value={value}
                 readOnly

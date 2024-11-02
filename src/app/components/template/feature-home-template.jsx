@@ -1,8 +1,8 @@
 import React from 'react'
-import FeatureComponent from './feature-component'
+import FeatureComponent from '../organisms/feature-component'
 import Title from '../atoms/title'
 
-function FeatureHome() {
+function FeatureHomeTemplate() {
     return (
         <div className='!mt-20 m-auto px-3 max-w-[1160px] max-sm:px-3'>
             <Title className={`mb-4`}>دوره های جامع اکتاواز</Title>
@@ -17,4 +17,4 @@ function FeatureHome() {
     )
 }
 
-export default FeatureHome
+export default FeatureHomeTemplate
