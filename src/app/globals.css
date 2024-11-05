@@ -6,6 +6,11 @@
   font-family: sans;
   src: url("../assets/fonts/IRANSans.ttf");
 }
+@font-face {
+  font-family: sahelBold;
+  src: url("../assets/fonts/Sans\ Bold.ttf");
+}
+
 .header {
   background: #303545f1;
 }

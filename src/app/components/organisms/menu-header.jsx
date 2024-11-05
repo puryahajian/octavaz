@@ -11,7 +11,7 @@ function MenuHeader() {
     const menuHeader = [
         {link: '/', label: 'قوانین'},
         {link: '/', label: 'استعلام مدرک'},
-        {link: '/', label: 'درباره ما'},
+        {link: '/about', label: 'درباره ما'},
         {link: '/', label: 'مسئولیت اجتماعی'},
         {link: '/', label: 'بلاگ'},
         {link: '/', label: 'راهنمای استفاده دوره'},

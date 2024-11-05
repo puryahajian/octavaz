@@ -60,7 +60,7 @@ function Footer() {
                 <SocialMedia/>
             </div>
             <div className='max-w-[1120px] m-auto flex mt-4 justify-center'>
-                <Text className={`max-sm:text-[9px]`}>کلیه حقوق این سایت متعلق به آموزشگاه اکتاواز (فکر نو) می باشد.</Text>
+                <Text className={`max-sm:text-[9px]`}>کلیه حقوق این سایت متعلق به آموزشگاه اکتاواز می باشد.</Text>
             </div>
         </div>
     )

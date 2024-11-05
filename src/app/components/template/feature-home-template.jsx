@@ -1,5 +1,5 @@
 import React from 'react'
-import FeatureComponent from '../organisms/feature-component'
+import FeatureComponent from '../molecules/feature-component'
 import Title from '../atoms/title'
 
 function FeatureHomeTemplate() {

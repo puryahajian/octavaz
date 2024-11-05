@@ -15,7 +15,7 @@ export default function RootLayout({
       <body className={` bg-bgmain`}>
         <QueryClientProvider client={queryClient}>
           <Provider store={store}>
-              {children}
+            {children}
           </Provider>
         </QueryClientProvider>
       </body>

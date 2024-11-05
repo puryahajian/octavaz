@@ -4,12 +4,15 @@ import { useQuery } from '@tanstack/react-query';
 import React, { useEffect, useState } from 'react'
 import interceptor from '../lib/interceptor';
 import ContentTabCategory from '../components/organisms/content-tab-category';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { setDataCategory } from '@/store/counterSlice';
 
 function DataSubCategoryHome() {
+    const [dataSubCategory, setDataSubCategoryLocal] = useState();
+    const dispatch = useDispatch();
+
     const categoryId = useSelector((state) => state.category.categoryId || 1);
 
-    const [dataCategory, setDataCategory] = useState();
 
     const { data, error, isLoading } = useQuery({
         queryKey: ['dataSubCategoryHome', categoryId],
@@ -20,16 +23,21 @@ function DataSubCategoryHome() {
     });
 
     useEffect(() => {
-    if (data) setDataCategory(data.results);
+        if (data) {
+            setDataSubCategoryLocal(data.results);
+            dispatch(setDataCategory(data.results));
+        }
     }, [data]);
 
-    if (isLoading) return <div>Loading...</div>;
+    if (isLoading) return <div className='w-full text-center text-white'>Loading...</div>;
     
-    if (data && data.results.length === 0) return <div>فیلد خالی</div>;
+    if (data && data.results.length === 0) return <div className='w-full text-center'>فیلد خالی</div>;
 
-    if (error) return <div>Error: {error.message}</div>;
+    if (error) return <div className='w-full text-center text-white'>Error: {error.message}</div>;
     return (
-        <ContentTabCategory dataCategory={dataCategory}/>
+        <>
+            <ContentTabCategory dataSubCategory={dataSubCategory}/>
+        </>
     )
 }
 
