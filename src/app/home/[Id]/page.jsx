@@ -6,8 +6,7 @@ import ProductPageTemplate from '@/app/components/template/product-page-template
 import React from 'react';
 
 
-function ProductId({params}) {
-  console.log(params)
+function ProductId() {
   return (
     <div>
       <Header/>

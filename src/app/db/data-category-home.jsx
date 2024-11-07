@@ -26,6 +26,7 @@ const DataCategoryHome = () => {
   if (isLoading) return <div>Loading...</div>;
 
   if (error) return <div>Error: {error.message}</div>;
+  console.log(data)
 
   const handleCategoryClick = (activeTab) => {
     dispatch(setCategoryId(activeTab));
