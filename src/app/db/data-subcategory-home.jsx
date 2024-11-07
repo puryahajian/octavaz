@@ -17,7 +17,7 @@ function DataSubCategoryHome() {
     const { data, error, isLoading } = useQuery({
         queryKey: ['dataSubCategoryHome', categoryId],
         queryFn: async () => {
-            const response = await interceptor.get(`courses/?category=${categoryId}`);
+            const response = await interceptor.get(`course/courses/?category=${categoryId}`);
             return response.data;
         }
     });
@@ -28,6 +28,7 @@ function DataSubCategoryHome() {
             dispatch(setDataCategory(data.results));
         }
     }, [data]);
+    
 
     if (isLoading) return <div className='w-full text-center text-white'>Loading...</div>;
     

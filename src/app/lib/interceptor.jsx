@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const interceptor = axios.create({
-  baseURL: "https://octavaz.com/course/",
+  baseURL: "https://octavaz.com/",
   headers: {
     'Accept': 'application/json', 
   },

@@ -16,7 +16,7 @@ function FloatingProductPage() {
       <div className=' bg-colorBgItemProductPage sticky top-[90px] bottom-0 rounded'>
         {storedDataCategory.map((item)=> (
           <>
-            <div className='h-32 w-full'>
+            <div className='h-fit w-fit'>
               <VideoPlayer/>
             </div>
             <div className='p-2'>

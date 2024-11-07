@@ -14,7 +14,7 @@ const DataCategoryHome = () => {
   const { data, error, isLoading } = useQuery({
     queryKey: ['dataCategoryHome'],
     queryFn: async () => {
-      const response = await interceptor.get('categories/');
+      const response = await interceptor.get('course/categories/');
       return response.data;
     }
   });

@@ -8,9 +8,9 @@ import VideoPlayer from './video-player';
 
 function ResponsiveFloatingProductPage() {
   return (
-    <div className=' w-full my-4 max-[770px]:block max-2xl:hidden'>
+    <div className=' w-full my-4 max-[770px]:block max-[5000px]:hidden'>
       <div className=' bg-colorBgItemProductPage sticky top-[90px] bottom-0 rounded'>
-        <div className='h-32 border border-red-500'>
+        <div className='h-fit'>
           <VideoPlayer/>
         </div>
         <div className='p-2'>
