@@ -6,7 +6,9 @@ function Cart() {
   return (
     <div>
       <Header/>
-      <BoxShoppingCart/>
+      <div className='mt-8'>
+        <BoxShoppingCart/>
+      </div>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Text from '../atoms/text';
 import '../../globals.css'
 import ButtonGeneral from '../atoms/button-general';
+import Link from 'next/link';
 
 
 function OrganismButtonBadge() {
@@ -45,9 +46,11 @@ function OrganismButtonBadge() {
                     <Text>مبلغ قابل پرداخت</Text>
                     <Text className={`text-white font-bold`}>۲۰۰۰۰۰۰ تومان</Text>
                 </div>
-                <ButtonGeneral className={`w-40 h-9`}>
-                    ادامه و ثبت سفارش
-                </ButtonGeneral>
+                <Link href='/cart'>
+                    <ButtonGeneral className={`w-40 h-9`}>
+                        ادامه و ثبت سفارش
+                    </ButtonGeneral>
+                </Link>
             </div>
         </ButtonBadge>
     )
