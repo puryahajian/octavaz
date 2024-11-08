@@ -7,6 +7,8 @@ import LogoHeader from '../atoms/logo-header';
 import "../../globals.css";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import OffCanvasExample from "../organisms/offcanvas";
+import ButtonBadge from '../molecules/button-badge';
+import OrganismButtonBadge from '../organisms/organism-button-badge';
 
 function Header() {
     const [prevScrollY, setPrevScrollY] = useState(0);
@@ -35,7 +37,8 @@ function Header() {
                 </div>
                 <MenuHeader />
                 <div className='flex gap-3 items-center'>
-                    <ShoppingCartOutlinedIcon sx={{ color: 'white' }} />
+                    {/* <ShoppingCartOutlinedIcon sx={{ color: 'white' }} /> */}
+                    <OrganismButtonBadge/>
                     <ButtonGeneral>
                         ثبت نام/ورود
                     </ButtonGeneral>

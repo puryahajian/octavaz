@@ -21,7 +21,7 @@ function AbouteTacherProductPage() {
     }
 
     return (
-        <div className=' mt-8'>
+        <div className='mt-8'>
             <Title className={`text-greenCostom`}>درمورد مدرس</Title>
             <div className='flex gap-4 mt-4 flex-wrap'>
                 <div>

@@ -33,3 +33,15 @@
 .css-hmd0fc-MuiRating-root {
   font-size: 14px !important;
 }
+
+/*  */
+.css-1xomo8h-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+  min-width: 0 !important;
+  background-color: #353a4b !important;
+}
+.css-99wn1p-MuiList-root-MuiMenu-list {
+  padding: 0 !important;
+}
+.card {
+  background-color: #2e3241 !important;
+}
