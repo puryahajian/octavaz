@@ -4,7 +4,7 @@ import Title from '../atoms/title'
 
 function FeatureHomeTemplate() {
     return (
-        <div className='!mt-20 m-auto px-3 max-w-[1160px] max-sm:px-3'>
+        <div>
             <Title className={`mb-4`}>دوره های جامع اکتاواز</Title>
             <div className="w-full m-auto flex justify-center">
                 <div className='grid grid-cols-3 max-[990px]:grid-cols-2 max-[770px]:grid-cols-1 gap-4 max-[770px]:w-full'>

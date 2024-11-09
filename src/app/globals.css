@@ -45,3 +45,6 @@
 .card {
   background-color: #2e3241 !important;
 }
+.css-1apkmlw-MuiButtonBase-root-MuiButton-root {
+  min-width: 40px !important;
+}

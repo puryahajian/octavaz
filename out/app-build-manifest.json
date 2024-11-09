@@ -1,83 +1,28 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-8f34230f4d1fc37b.js",
-      "static/chunks/fd9d1056-d65aa07e08083df6.js",
-      "static/chunks/117-9ee2da8755b2470b.js",
-      "static/chunks/main-app-94575d43d2860e30.js",
-      "static/chunks/app/_not-found/page-8fab37f7acf79a2d.js"
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
-      "static/chunks/webpack-8f34230f4d1fc37b.js",
-      "static/chunks/fd9d1056-d65aa07e08083df6.js",
-      "static/chunks/117-9ee2da8755b2470b.js",
-      "static/chunks/main-app-94575d43d2860e30.js",
-      "static/css/80eae32a44d2a810.css",
-      "static/chunks/575-514a001d28b59890.js",
-      "static/chunks/403-702b352be8b5b68d.js",
-      "static/chunks/app/layout-93ce7648935c72d2.js"
-    ],
-    "/home/[Id]/page": [
-      "static/chunks/webpack-8f34230f4d1fc37b.js",
-      "static/chunks/fd9d1056-d65aa07e08083df6.js",
-      "static/chunks/117-9ee2da8755b2470b.js",
-      "static/chunks/main-app-94575d43d2860e30.js",
-      "static/css/80eae32a44d2a810.css",
-      "static/chunks/492-05a6222d9fba73a4.js",
-      "static/chunks/575-514a001d28b59890.js",
-      "static/chunks/52-9b50f911127f8444.js",
-      "static/chunks/169-52e629024fcfd17d.js",
-      "static/chunks/852-58e7e7933d2fe9d6.js",
-      "static/chunks/app/home/[Id]/page-8c55c199689ef80b.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-8f34230f4d1fc37b.js",
-      "static/chunks/fd9d1056-d65aa07e08083df6.js",
-      "static/chunks/117-9ee2da8755b2470b.js",
-      "static/chunks/main-app-94575d43d2860e30.js",
-      "static/css/10cf04b6acf7a3c1.css",
-      "static/css/80eae32a44d2a810.css",
-      "static/chunks/492-05a6222d9fba73a4.js",
-      "static/chunks/575-514a001d28b59890.js",
-      "static/chunks/403-702b352be8b5b68d.js",
-      "static/chunks/52-9b50f911127f8444.js",
-      "static/chunks/715-7e8fde4e1e1b2a86.js",
-      "static/chunks/94-ecbec1a1a064b57a.js",
-      "static/chunks/app/page-5c71047bcf2d7d2e.js"
-    ],
-    "/about/page": [
-      "static/chunks/webpack-8f34230f4d1fc37b.js",
-      "static/chunks/fd9d1056-d65aa07e08083df6.js",
-      "static/chunks/117-9ee2da8755b2470b.js",
-      "static/chunks/main-app-94575d43d2860e30.js",
-      "static/css/80eae32a44d2a810.css",
-      "static/chunks/492-05a6222d9fba73a4.js",
-      "static/chunks/app/about/page-376e6830b7a26a35.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/cart/page": [
-      "static/chunks/webpack-8f34230f4d1fc37b.js",
-      "static/chunks/fd9d1056-d65aa07e08083df6.js",
-      "static/chunks/117-9ee2da8755b2470b.js",
-      "static/chunks/main-app-94575d43d2860e30.js",
-      "static/css/80eae32a44d2a810.css",
-      "static/chunks/492-05a6222d9fba73a4.js",
-      "static/chunks/169-52e629024fcfd17d.js",
-      "static/chunks/app/cart/page-59641ae184558dc5.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/cart/page.css",
+      "static/chunks/app/cart/page.js"
     ],
-    "/home/page": [
-      "static/chunks/webpack-8f34230f4d1fc37b.js",
-      "static/chunks/fd9d1056-d65aa07e08083df6.js",
-      "static/chunks/117-9ee2da8755b2470b.js",
-      "static/chunks/main-app-94575d43d2860e30.js",
-      "static/css/10cf04b6acf7a3c1.css",
-      "static/css/80eae32a44d2a810.css",
-      "static/chunks/492-05a6222d9fba73a4.js",
-      "static/chunks/575-514a001d28b59890.js",
-      "static/chunks/403-702b352be8b5b68d.js",
-      "static/chunks/52-9b50f911127f8444.js",
-      "static/chunks/715-7e8fde4e1e1b2a86.js",
-      "static/chunks/94-ecbec1a1a064b57a.js",
-      "static/chunks/app/home/page-cac3f919324b5ca1.js"
+    "/dashboard/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/page.css",
+      "static/chunks/app/dashboard/page.js"
     ]
   }
 }

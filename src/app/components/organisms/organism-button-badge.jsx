@@ -21,11 +21,11 @@ function OrganismButtonBadge() {
         <ButtonBadge
             buttonContent={
                 <Badge badgeContent={4} color="error">
-                <ShoppingCartOutlinedIcon sx={{ color: "white" }} />
+                    <ShoppingCartOutlinedIcon sx={{ color: "white" }} />
                 </Badge>
             }
         >
-            <div className=' w-full px-3 card rounded-none border border-transparent max-h-72 overflow-scroll'>
+            <div className=' w-full px-3 card rounded-none max-h-72 overflow-scroll'>
                 <div className='border-b border-stone-600 text-white flex items-center gap-2 my-3 pb-2'>
                     {loading && <Skeleton variant="rectangular" width={64} height={64} animation="wave" />}
                     <img 

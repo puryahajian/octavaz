@@ -3,6 +3,7 @@ import Breadcrumb from '@/app/components/organisms/breadcrumbs';
 import Footer from '@/app/components/template/footer';
 import Header from '@/app/components/template/Header';
 import ProductPageTemplate from '@/app/components/template/product-page-template';
+import TemplateBoxMain from '@/app/components/template/template-box-main';
 import React from 'react';
 
 
@@ -10,12 +11,12 @@ function ProductId() {
   return (
     <div>
       <Header/>
-      <div className=' mt-9 max-w-[1135px] m-auto'>
+      <TemplateBoxMain>
         <Breadcrumb/>
         <div className=' mt-4 '>
           <ProductPageTemplate/>
         </div>
-      </div>
+      </TemplateBoxMain>
       <Footer/>
     </div>
   )

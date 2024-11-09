@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from '../components/template/Header'
-import BoxShoppingCart from '../components/molecules/box-shopping-cart'
+import OrganismBoxShoppingCart from '../components/organisms/organism-box-shopping-cart'
 
 function Cart() {
   return (
     <div>
       <Header/>
       <div className='mt-8'>
-        <BoxShoppingCart/>
+        <OrganismBoxShoppingCart/>
       </div>
     </div>
   )
