@@ -48,7 +48,7 @@ function Dashboard() {
         setValue(newValue);
     };
     return (
-        <div>
+        <div className=''>
         <Header/>
             <div className='mt-9 '>
                 <Box
