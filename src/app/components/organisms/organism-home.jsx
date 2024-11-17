@@ -13,9 +13,9 @@ function OrganismHome() {
             <Header/>
             <SliderMain/>
             <TemplateBoxMain className={`!mt-14`}>
-                <FeatureHomeTemplate/>
-                <Title className={`max-[940px]:hidden mt-14`}>دسته بندی دوره ها</Title>
+                {/* <Title className={`max-[940px]:hidden mt-14`}>دسته بندی دوره ها</Title> */}
                 <TabCategoryHome/>
+                <FeatureHomeTemplate/>
             </TemplateBoxMain>
             <Footer/>
         </div>

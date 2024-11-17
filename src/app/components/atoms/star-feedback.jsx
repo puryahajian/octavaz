@@ -18,15 +18,17 @@ const labels = {
 };
 
 function StarFeedback({rating}) {
-    const value = rating;
+    const value = rating || 3;
 
     return (
         <Box sx={{ width: 'max-content', display: 'flex', alignItems: 'center', direction: 'ltr' }}>
             <Rating
                 value={value}
                 readOnly
-                precision={rating}
-                emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+                precision={rating || value}
+                emptyIcon={
+                    <StarIcon style={{ opacity: 0.55 , color: '#ccc'}} fontSize="inherit" />
+                }
             />
             <Box sx={{ ml: 1, color: 'white', fontSize: '10px' }}>{labels[value]}</Box>
         </Box>

@@ -17,7 +17,7 @@ function AboutProduct() {
       {storedDataCategory.map((item) => (
         <>
           <div className='flex justify-between items-center'>
-            <Title className={`text-[25px] text-greenCostom`}>{item.name}</Title>
+            <Title className={`text-[25px] text-Custom`}>{item.name}</Title>
             <BookmarkBorderIcon sx={{fontSize: '40px', color: '#65a8d2'}}/>
           </div>
           <Text className={`mt-8 text-justify`}>{item.description}</Text>

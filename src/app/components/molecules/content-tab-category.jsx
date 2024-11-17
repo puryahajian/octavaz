@@ -40,9 +40,14 @@ function ContentTabCategory({dataSubCategory}) {
                             <Text>5 فصل</Text>
                             <Text>{item.rating} درس</Text>
                         </div>
-                        <div className='grid grid-cols-2 items-center'>
-                            <Title className={`text-base text-white`}>{item.price} تومان</Title>
-                            <ButtonGeneral>افزودن</ButtonGeneral>
+                        <div className='grid grid-cols-1 items-center'>
+                            <Title className={`text-base text-white hidden`}></Title>
+                            
+                            <ButtonGeneral>
+                                <Link href={`/home/${item.id}`}>
+                                    مشاهده بیشتر
+                                </Link>
+                            </ButtonGeneral>
                         </div>
                     </div>
                 </div>  

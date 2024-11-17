@@ -69,13 +69,13 @@ function ListCourses() {
                     }}
                 >
                     <div className='flex justify-between w-full'>
-                        <Text className={`text-greenCostom`}>
+                        <Text className={`text-Custom`}>
                             <PlayArrowIcon/>
                             معرفی دوره جرئت فیلم سازی
                         </Text>
                         <div className='flex gap-16 ml-2'>
-                            <Text className={`text-greenCostom`}>پیش نمایش</Text>
-                            <Text className={`text-greenCostom`}>5 دقیقه</Text>
+                            <Text className={`text-Custom`}>پیش نمایش</Text>
+                            <Text className={`text-Custom`}>5 دقیقه</Text>
                         </div>
                     </div>
                 </AccordionDetails>
@@ -114,13 +114,13 @@ function ListCourses() {
                     }}
                 >
                     <div className='flex justify-between w-full'>
-                        <Text className={`text-greenCostom`}>
+                        <Text className={`text-Custom`}>
                             <PlayArrowIcon/>
                             معرفی دوره جرئت فیلم سازی
                         </Text>
                         <div className='flex gap-16 ml-2'>
-                            <Text className={`text-greenCostom`}>پیش نمایش</Text>
-                            <Text className={`text-greenCostom`}>5 دقیقه</Text>
+                            <Text className={`text-Custom`}>پیش نمایش</Text>
+                            <Text className={`text-Custom`}>5 دقیقه</Text>
                         </div>
                     </div>
                 </AccordionDetails>

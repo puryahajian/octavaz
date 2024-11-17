@@ -3,7 +3,7 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useEffect, useState } from 'react'
 import interceptor from '../lib/interceptor';
-import ContentTabCategory from '../components/organisms/content-tab-category';
+import ContentTabCategory from '../components/molecules/content-tab-category';
 import { useDispatch, useSelector } from 'react-redux';
 import { setDataCategory } from '@/store/counterSlice';
 

@@ -21,7 +21,7 @@ function BoxShoppingCart() {
     return (
         <>
             <TemplateBoxMain>
-                <Title className={`gap-2 flex items-center text-greenCostom`}>
+                <Title className={`gap-2 flex items-center text-Custom`}>
                     <ShoppingCartIcon/>
                     سبد خرید
                 </Title>
@@ -64,11 +64,11 @@ function BoxShoppingCart() {
                         // expandIcon={<ExpandMoreIcon />}
                     >
                         <div className='flex justify-between w-full max-[770px]:block'>
-                            <Text className={`text-greenCostom`}>Custom transition using Fade</Text>
+                            <Text className={`text-Custom`}>Custom transition using Fade</Text>
                             <Text className={`max-[770px]:hidden`}>توضیحات</Text>
                             <div className='flex gap-20 ml-2 max-[770px]:w-full max-[770px]:justify-between max-[770px]:mt-4'>
-                                <Text className={`flex gap-2`}>قیمت دوره: <Text className={`text-greenCostom`}>۲۰۰۰۰</Text> تومان</Text>
-                                <DeleteIcon className='text-greenCostom'/>
+                                <Text className={`flex gap-2`}>قیمت دوره: <Text className={`text-Custom`}>۲۰۰۰۰</Text> تومان</Text>
+                                <DeleteIcon className='text-Custom'/>
                             </div>
                         </div>
                     </AccordionSummary>
@@ -91,16 +91,16 @@ function BoxShoppingCart() {
                                 <Text className={`text-justify`}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</Text>
                             </div>
                             <div className='w-1/4 p-4 max-[770px]:w-full'>
-                                <Text className={`flex gap-2`}>مدرس: <Text className={`text-greenCostom`}>لورم ایپسوم</Text></Text>
-                                <Text className={`flex gap-2`}>تعداد فصل:<Text className={`text-greenCostom`}> 2</Text></Text>
-                                <Text className={`flex gap-2`}>تعداد درس:<Text className={`text-greenCostom`}> 2</Text></Text>
+                                <Text className={`flex gap-2`}>مدرس: <Text className={`text-Custom`}>لورم ایپسوم</Text></Text>
+                                <Text className={`flex gap-2`}>تعداد فصل:<Text className={`text-Custom`}> 2</Text></Text>
+                                <Text className={`flex gap-2`}>تعداد درس:<Text className={`text-Custom`}> 2</Text></Text>
                             </div>
                         </div>
                     </AccordionDetails>
                 </Accordion>
 
                 <div className='w-full mt-4 flex justify-end gap-2'>
-                    <ButtonGeneral className={`bg-transparent border !border-greenCostom !text-greenCostom`}>
+                    <ButtonGeneral className={`bg-transparent border !border-Custom !text-Custom`}>
                         ادامه فرایند خرید
                     </ButtonGeneral>
                     <ButtonGeneral className={`!bg-colorBgItemProductPage`}>

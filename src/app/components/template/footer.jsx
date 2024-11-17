@@ -1,9 +1,9 @@
 import React from 'react'
 import Title from '../atoms/title'
 import ButtonGeneral from '../atoms/button-general'
-import SocialMedia from '../organisms/social-media';
+import SocialMedia from '../molecules/social-media';
 import Text from '../atoms/text';
-import FooterSizeTabletMobile from '../organisms/footer-size-tablet';
+import FooterSizeTabletMobile from '../molecules/footer-size-tablet';
 
 function Footer() {
 

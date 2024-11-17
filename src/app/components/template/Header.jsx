@@ -1,12 +1,12 @@
 "use client"
 
 import React from 'react';
-import OrganismHeader from '../organisms/organism-header'
+import MoleculesHeader from '../molecules/molecule-header';
 
 
 function Header() {
     return (
-        <OrganismHeader/>
+        <MoleculesHeader/>
     )
 }
 

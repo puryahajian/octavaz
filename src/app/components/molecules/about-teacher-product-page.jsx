@@ -22,7 +22,7 @@ function AbouteTacherProductPage() {
 
     return (
         <div className='mt-8'>
-            <Title className={`text-greenCostom`}>درمورد مدرس</Title>
+            <Title className={`text-Custom`}>درمورد مدرس</Title>
             <div className='flex gap-4 mt-4 flex-wrap'>
                 <div>
                     <div className='w-24 h-24'>
@@ -51,7 +51,7 @@ function AbouteTacherProductPage() {
                     </ul>
                 </div>
                 <div className=' pt-2'>
-                    <Title className={`text-greenCostom`}>مانی حقیقی، حمید نعمت‌الله، شهرام مکری، کیانوش عیاری، مجید برزگر</Title>
+                    <Title className={`text-Custom`}>مانی حقیقی، حمید نعمت‌الله، شهرام مکری، کیانوش عیاری، مجید برزگر</Title>
                 </div>
             </div>
         </div>

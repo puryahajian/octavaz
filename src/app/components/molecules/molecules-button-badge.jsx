@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import ButtonBadge from '../molecules/button-badge'
+import ButtonBadge from './button-badge'
 import { Badge, Skeleton } from '@mui/material'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Text from '../atoms/text';
@@ -10,7 +10,7 @@ import ButtonGeneral from '../atoms/button-general';
 import Link from 'next/link';
 
 
-function OrganismButtonBadge() {
+function MoleculesButtonBadgeShop() {
     const [loading, setLoading] = useState(true);
 
     const handleLoad = () => {
@@ -56,4 +56,4 @@ function OrganismButtonBadge() {
     )
 }
 
-export default OrganismButtonBadge
+export default MoleculesButtonBadgeShop

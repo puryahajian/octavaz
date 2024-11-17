@@ -12,7 +12,7 @@ function CourseAchievement() {
     <div className='mt-4 p-4 bg-colorBgItemProductPage rounded'>
       {storedDataCategory.map((item)=> (
         <>
-          <Title className={`text-greenCostom`}> خروجی دوره</Title>
+          <Title className={`text-Custom`}> خروجی دوره</Title>
           <Text className={`text-justify mt-6`}>
           {item.course_achievement}
           </Text>

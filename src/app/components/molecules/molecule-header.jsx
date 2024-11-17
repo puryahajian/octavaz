@@ -2,13 +2,11 @@
 
 import React, { useEffect, useState } from 'react'
 import ButtonGeneral from '../atoms/button-general';
-import MenuHeader from '../organisms/menu-header';
+import MenuHeader from './menu-header';
 import LogoHeader from '../atoms/logo-header';
 import "../../globals.css";
-// import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import OffCanvasExample from "../organisms/offcanvas";
-import OrganismButtonBadge from '../organisms/organism-button-badge';
-import ButtonBadge from '../molecules/button-badge';
+import OffCanvasExample from "./offcanvas";
+import ButtonBadge from './button-badge';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import Text from '../atoms/text'
 import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
@@ -16,8 +14,12 @@ import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
+import OffcanvasProfileHeader from './offcanvas-profile-header'
+// import MoleculesButtonBadge from './molecules-button-badge'
+import MoleculesButtonBadgeShop from './molecules-button-badge';
+import Link from 'next/link';
 
-function OrganismHeader() {
+function MoleculesHeader() {
     const [prevScrollY, setPrevScrollY] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
 
@@ -38,7 +40,7 @@ function OrganismHeader() {
     const styleMenuItem = {
         display: 'flex',
         gap: '8px',
-        paddingLeft: '120px',
+        paddingLeft: '0px',
         paddingTop: '8px',
         paddingBottom: '8px',
         cursor: 'pointer',
@@ -51,6 +53,12 @@ function OrganismHeader() {
         fontSize: '22px', 
         color: '#dc2626'
     }
+    const styleLink = {
+        display: 'flex',
+        gap: '8px',
+        paddingLeft: '120px',
+
+    }
     return (
         <div className={`header w-full items-center sticky top-0 z-10 flex justify-center py-2 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className='max-w-[1160px] lg:w-full lg:w-[100%] flex justify-between items-center w-full px-3'>
@@ -60,72 +68,81 @@ function OrganismHeader() {
                 </div>
                 <MenuHeader />
                 <div className='flex gap-3 items-center hidden'>
-                    {/* <ShoppingCartOutlinedIcon sx={{ color: 'white' }} /> */}
-                    <OrganismButtonBadge/>
                     <ButtonGeneral>
                         ثبت نام/ورود
                     </ButtonGeneral>
                 </div>
-                <div className='flex gap-3 items-center '>
+                <div className='flex gap-3 items-center max-[1020px]:hidden'>
                     <NotificationsOutlinedIcon sx={{color: 'white', cursor:'pointer', transition:'0.2s',
                         ":hover":{
                             color: '#65a8d2'
                         }
                     }}/>
-                    <OrganismButtonBadge/>
-                    <BookmarkBorderOutlinedIcon sx={{color: 'white', cursor:'pointer', transition:'0.2s',
+                    <MoleculesButtonBadgeShop/>
+                    {/* <BookmarkBorderOutlinedIcon sx={{color: 'white', cursor:'pointer', transition:'0.2s',
                         ":hover":{
                             color: '#65a8d2'
                         }
-                    }}/>
+                    }}/> */}
                     <ButtonBadge
                         buttonContent={
                             <PersonOutlineOutlinedIcon sx={{fontSize: '32px'}}/>
                         }    
                     >
                         <div className='p-3'>
-                            <Text>
+                            <Text className={`text-xs`}>
                                 نام کاربری
                             </Text>
-                            <Text>
+                            <Text className={`mt-2 text-xs`}>
                                 ایمیل کاربر
                             </Text>
                             <hr className='text-gray-500 mt-2' />
                             <ul>
-                                <li style={styleMenuItem}  >
-                                    <PersonOutlineOutlinedIcon style={styleItemIcon} />
-                                    <Text>
-                                        پنل هنرجو
-                                    </Text>
+                                <li style={styleMenuItem} >
+                                    <Link style={styleLink} href='dashboard'>
+                                        <PersonOutlineOutlinedIcon style={styleItemIcon} />
+                                        <Text className={`text-base`}>
+                                            پنل هنرجو
+                                        </Text>
+                                    </Link>
                                 </li>
                                 <hr className='text-gray-500' />
                                 <li style={styleMenuItem}>
-                                    <ClassOutlinedIcon style={styleItemIcon}/>
-                                    <Text>
-                                        دوره ها
-                                    </Text>
+                                    <Link style={styleLink} href=''>
+                                        <ClassOutlinedIcon style={styleItemIcon}/>
+                                        <Text className={`text-base`}>
+                                            دوره ها
+                                        </Text>
+                                    </Link>
                                 </li>
                                 <hr className='text-gray-500' />
                                 <li style={styleMenuItem}>
-                                    <MailOutlineOutlinedIcon style={styleItemIcon}/>
-                                    <Text>
-                                        پیام ها
-                                    </Text>
+                                    <Link style={styleLink} href=''>
+                                        <MailOutlineOutlinedIcon style={styleItemIcon}/>
+                                        <Text className={`text-base`}>
+                                            پیام ها
+                                        </Text>
+                                    </Link>
                                 </li>
                                 <hr className='text-gray-500' />
                                 <li style={styleMenuItem}>
-                                    <ExitToAppOutlinedIcon style={styleItemExit}/>
-                                    <Text className={`text-red-600`}>
-                                        خروج
-                                    </Text>
+                                    <Link style={styleLink} href=''>
+                                        <ExitToAppOutlinedIcon style={styleItemExit}/>
+                                        <Text className={`text-red-600 text-base`}>
+                                            خروج
+                                        </Text>
+                                    </Link>
                                 </li>
                             </ul>  
                         </div>
                     </ButtonBadge>
+                </div>
+                <div className='max-[1020px]:block max-[2000px]:hidden'>
+                    <OffcanvasProfileHeader/>
                 </div>
             </div>
         </div>
     )
 }
 
-export default OrganismHeader
+export default MoleculesHeader

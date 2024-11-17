@@ -12,7 +12,7 @@ function CourseContacts() {
     <div className='mt-4 p-4 bg-colorBgItemProductPage rounded'>
       {storedDataCategory.map((item)=> (
         <>
-          <Title className={`text-greenCostom`}>مخاطبین دوره</Title>
+          <Title className={`text-Custom`}>مخاطبین دوره</Title>
           <Text className={`text-justify mt-6`}>
             {item.course_contacts}
           </Text>

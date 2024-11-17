@@ -5,6 +5,7 @@ import ButtonGeneral from '../atoms/button-general'
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import Text from '../atoms/text';
 import VideoPlayer from './video-player';
+import InputCheckbox from '../atoms/input-checkbox'
 
 function ResponsiveFloatingProductPage() {
   return (
@@ -13,27 +14,33 @@ function ResponsiveFloatingProductPage() {
         <div className='h-fit'>
           <VideoPlayer/>
         </div>
-        <div className='p-2'>
-          <Title className={`flex items-center gap-1 text-greenCostom`}>2,000,000<Text>تومان</Text></Title>
+        <div className='p-2 '>
+          <Title className={`text-lg text-center mb-2`}>انتخاب کنبد</Title>
+          <div className=' grid gap-3'>
+            <div className='flex items-center justify-between'>
+              <div className='flex items-center gap-2'>
+                <InputCheckbox />
+                <Text>سطح یکم</Text>
+              </div>
+              <div>
+                <ButtonGeneral className={`py-1 !px-2 bg-transparent border !border-Custom !text-Custom !text-xs`}>سر فصل ها</ButtonGeneral>
+              </div>
+            </div>
+            <div className='flex items-center justify-between'>
+              <div className='flex items-center gap-2'>
+                <InputCheckbox />
+                <Text>سطح دوم</Text>
+              </div>
+              <div>
+                <ButtonGeneral className={`py-1 !px-2 bg-transparent border !border-Custom !text-Custom !text-xs`}>سر فصل ها</ButtonGeneral>
+              </div>
+            </div>
+          </div>
         </div>
-        <ButtonGeneral className={`w-full rounded-none`}>افزودن به سبد خرید</ButtonGeneral>
         <div className='p-2'>
-          <Title className={`mt-3`}>این دوره شامل</Title>
-          <ul className='mt-3 grid gap-2'>
-            <li className='flex items-center gap-1'>
-              <PlayCircleIcon sx={{fontSize: '18px', color: '#65a8d2'}}/>
-              <Text>۷ فصل</Text>
-            </li>
-            <li className='flex items-center gap-1'>
-              <PlayCircleIcon sx={{fontSize: '18px', color: '#65a8d2'}}/>
-              <Text>۶۴ درس</Text>
-            </li>
-            <li className='flex items-center gap-1'>
-              <PlayCircleIcon sx={{fontSize: '18px', color: '#65a8d2'}}/>
-              <Text>گواهی پایان ترم</Text>
-            </li>
-          </ul>
+          <Title className={`flex items-center gap-1 text-Custom`}>2,000,000<Text>تومان</Text></Title>
         </div>
+        <ButtonGeneral className={`w-full !rounded-b-md rounded-none`}>افزودن به سبد خرید</ButtonGeneral>
       </div>
     </div>
   )

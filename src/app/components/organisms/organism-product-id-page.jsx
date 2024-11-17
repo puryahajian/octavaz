@@ -1,5 +1,5 @@
 import React from 'react'
-import Breadcrumb from './breadcrumbs';
+import Breadcrumbs from '../molecules/breadcrumbs'
 import Footer from '../template/footer';
 import Header from '../template/Header';
 import ProductPageTemplate from '../template/product-page-template';
@@ -10,7 +10,7 @@ function OrganismProductIdPage() {
     <div>
       <Header/>
       <TemplateBoxMain>
-        <Breadcrumb/>
+        <Breadcrumbs/>
         <div className=' mt-4 '>
           <ProductPageTemplate/>
         </div>
